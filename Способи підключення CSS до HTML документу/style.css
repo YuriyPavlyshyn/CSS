@@ -1,0 +1,17 @@
+/* 3. Зовнішній (external) CSS */
+.h3 {
+    color: aquamarine; text-align: center;
+}
+
+.p3 {
+    color: cornflowerblue; text-align: center;
+}
+
+/* 4. Комбінований (combined) CSS */
+.h4 {
+    color: chocolate; text-align: center;
+}
+
+.p4 {
+    color: chartreuse; text-align: center;
+}

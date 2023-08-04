@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каскад в CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        Каскад в CSS - це те як браузери вирішують конфліктуючі оголошення в CSS 
+    -->
+
+    <!-- Каскадність означає, що до одного елемента може застосовуватися декілька CSS правил. Серед таких правил можуть бути і такі що конфліктують між собою.  -->
+
+    <!--    Правила каскадування
+
+        Правило перше: це важливість ! (!important) - самий високий пріоритет.
+
+        Правило друге: джерело. Є три місця де може застосовуватися це правило: 1. веб-сайт. 2. користувач (локальні користувацькі стилі). 3. браузер (кожен браузер має свій власний набір стилів).
+        ! Примітка: стилі веб-сайту переважають над стилями за замовчуванням !
+
+        Правило третє: специфічність
+
+        Правило четверте: порядок розміщення
+    -->
+
+    <p style="color: red;">Lorem, ipsum dolor.</p>
+
+    <button>Learn More</button>
+
+    <h1 id="title">Lorem ipsum dolor sit amet.</h1>
+
+    <h2>Lorem ipsum dolor sit amet.</h2>
+</body>
+</html>

@@ -1,0 +1,158 @@
+body {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+}
+
+/* Перший приклад */
+.second {
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+    background-color: blueviolet;
+}
+
+.first {
+    width: 50%;
+    padding-left: 50%;
+    font-size: 150%; /* для div на встановлено властивостей font-size, тому розмір вираховується по відношенню до налаштувань розміру шрифту для body - 16px. У даному випадку sont-size в розмірі 150% становить 16 (100%)+8 (50%)=24px (150%). Існує також формула: 16 ділимо на 100 та результат після цього множимо на 150, де ми отримуємо тих самих 24 (16/100*150=24) */
+}
+
+/* Другий приклад */
+div.img {
+    width: 80%; /* ширина елементу по відношенню до всього розширення екрану */
+    height: 300px;
+    border: none;
+    margin: 0 auto; /* розміщення div по центру екрану */
+}
+
+/* div img {
+    width: 100%;
+    height: 100%;
+} */
+
+/* Використання вимірів для моноширійного шрифта */
+html {
+    font-size: 30px;
+    font-family: helvetica;
+}
+
+p.goorgia, p.helvetica, p.courier {
+    font-size: 2.5ex; /* застосовуємо збільшену висоту букв */
+}
+
+p {
+    font-size: 3ch; /* застосовуємо збільшену ширину букв */
+}
+
+.georgia {
+    font-family: georgia;
+}
+
+.helvetica {
+    font-family: helvetica;
+}
+
+.courier {
+    font-family: courier;
+}
+
+/* Контейнер з загальним розміром  */
+.content {
+    font-size: 15px;
+}
+/* Тут ми задаємо для заголовку розмір, тексту що в 2.5 рази більший за загальний розмір тексту бутьківського елементу. *15*2.5= 37,5px) */
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 3.5em;
+}
+
+/* Тут така ж ситуація тільки інший батьківський та дочірній елемент. В даному випадку h3 має 52.5px (15*3.5=52.5px). Тепер ми знаємо розмір батьківського елементу і все що потрібно для того щоб вирахувати розмір span - це розмір батьківського елементу помножити на розмір збільшеного span = 131.25px (52.5*2.5=131.25px) */
+h3 span {
+    font-size: 2.5em; /* 131.25px */
+}
+
+/* Останній приклад з rem. Фактична ідентична ситуація з em. Однак відрізняється тим, що коли ми беремо під дочірній елемент - відштовхуємося не від останнього батьківського елементу, а від первинного основного батьківського елементу */
+.hello {
+    font-size: 15px;
+}
+
+h4 { /* Від батьківського елементу .hello беремо 15px та множимо на 1.5rem, отримуємо 22.5px*/
+    font-size: 1.5rem; /* 22.5px */
+}
+
+h4 span { /* Не від останнього батьківського елементу, а від основного - .hello беремо 15px та множимо на 2.5rem, отримуємо 37.5px */
+    font-size: 2.5em; /* 37.5px */
+}
+
+/* !!! Примітка !!! Фактично em та rem - ідентичні по відношенню до першого дочірнього елементу від першого батьківського елементу, однак існує різниця при розрахунку для під чочірніх елементів - деталі описані вище !!! */
+
+
+.toronto {
+    height: 25%;
+    width: 25%;
+    border: 10px solid greenyellow;
+    outline-style: solid;
+    outline-width: thick;
+    outline-color: black invert;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+li {
+    list-style: none;
+}
+
+li::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 10px;
+    width: 10px;
+    background-image: url(https://media.giphy.com/media/xTiTnx4rTU9kOPqpgs/giphy.gif);
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.hello-friends {
+    position: static;
+    top: 1px;
+    right: 1px;
+}
+
+.hello {
+    background-color: coral;
+    width: 400px;
+    height: 100px;
+    border: 1px solid;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px;
+}
+
+.seconds {
+    width: 30%;
+    height: auto;
+    border: 2px solid grey;
+    background-color: blueviolet;
+    float: none;
+    padding: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.seconds-2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 2px solid black;
+    background-color: pink;
+    padding: 10px;
+    float: none;
+}

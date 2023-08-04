@@ -1,0 +1,97 @@
+/* Приклад із створенням елементарного псевдо - елементу з ліва
+h2::before {
+    content: '+';
+    color: red;
+    font-size: 50px;
+}
+
+/* Приклад із створенням елементарного псевдо - елементу з права
+h2::after {
+    content: '+';
+    color: red;
+    font-size: 50px;
+} */
+
+/* Класний приклад з створення псевдо-елементу: підкреслення тексту
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: red;
+    right: 0;
+    bottom: 0;
+    transition: .5s;
+}
+
+h2:hover::before {
+    width: 100%;
+} */
+
+/* Тут при виборі none або normal, жодний вміст до псевдо-елементу не додається 
+
+h2::before {
+    content: 'none або normal';
+} */
+
+/* Додавання контенту через вказання значення атрибуту, яке буде відображатись
+
+h2::before {
+    content: attr(title);
+}
+
+h2::after {
+    content: attr(title);
+} */
+
+/* Ось тут ми додаємо певдо-елемент: картинку через url
+h2::before {
+    content: url(https://bizmedia.kz/wp-content/uploads/2022/08/sian_05_m-1024x480.jpg);
+} */
+
+/* Тут ми фактично створюємо лише кавички, що являє собою безглузду трату часу
+h2::before {
+    content: open-quote;
+}
+
+h2::after {
+    content: close-quote;
+} */
+
+/* Тип quotes - має додавати елементи, однак чомусь не працює 
+
+h2 {
+    quotes: "+" "-";
+} */
+
+
+/* Тут ми порахували параграфи */
+/* .text {
+    counter-reset: test;
+}
+
+p::before {
+    counter-increment: test;
+    content: "№" counter(test) ". ";
+} */
+
+/* Тут ми змінюємо стартову позицію рахунку починаючи з "10"  */
+.text {
+    counter-reset: test 9;
+}
+
+p::before {
+    counter-increment: test 3; 
+    content: "№" counter(test) ". ";
+}

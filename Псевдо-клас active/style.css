@@ -1,0 +1,21 @@
+/* Первинний стан посилання */
+a:link {
+    color: orange;
+}
+
+/* Відвіданий стан посилання */
+a:visited {
+    color: gray;
+}
+
+/* Наведений мишкою стан посилання */
+a:hover {
+    background-color: darkblue;
+    color: greenyellow;
+}
+
+/* Стан посилання з моменту натискання мишкою на нього та відпускання мишки */
+a:active {
+    background-color: black;
+    color: red;
+}

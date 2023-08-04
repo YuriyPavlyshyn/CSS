@@ -1,0 +1,15 @@
+h1, h2, h3, h4, .text, #color-text {
+    color: aquamarine;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h2, p {
+    color: red;
+}

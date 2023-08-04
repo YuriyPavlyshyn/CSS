@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    transition: all 1s ease;
+  }
+
+  .start {
+    position: absolute;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: black;
+    word-spacing: 10px;
+  }
+  
+  img:hover {
+    /* filter: blur(22px); */
+    /* filter: drop-shadow(5px 6px 4px rgba(0, 0, 0, 0.5)); */
+    /* filter: grayscale(80%); */
+    /* filter: brightness(1350%); */
+    /* filter: contrast(70%); */
+    /* filter: hue-rotate(250deg); до 360 градусів */
+    /* filter: hue-rotate(180deg); */
+    /* filter: invert(350%); */
+    /* filter: saturate(265%); */
+    /* filter: sepia(70%); */
+    /* filter: opacity(50%); */
+    /* filter: url(#toSvg); */
+    filter: blur(2px) brightness(150%) sepia(50%);
+    
+  }
+
+  h3:hover, i:hover {
+      color: white;
+  }

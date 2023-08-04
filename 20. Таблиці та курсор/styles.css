@@ -1,0 +1,64 @@
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    cursor: url('hend1.png'), auto;
+  }
+  
+  table,
+  table * {
+    max-width: 800px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* border-spacing: 20px; */
+    caption-side: top;
+    min-width: 100px;
+    text-align: right;
+    vertical-align: baseline;
+    empty-cells: hide;
+    
+    padding: 10px;
+    text-align: justify;
+
+  }
+  
+  .dis,
+  td {
+    pointer-events: none;
+  }
+
+  caption {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .text {
+    display: table;
+    width: 800px;
+    height: 200px;
+    margin: 50px 0;
+    background: green;
+  }
+
+  .text p {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middleж
+  }
+
+  .text p::first-line {
+      color: burlywood;
+  }
+
+  .text span {
+    font-size: 40px;
+  }
+
+  .text span {
+      color: red;
+  }

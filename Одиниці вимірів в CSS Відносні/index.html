@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon">
+    <title>Одиниці вимірів в CSS: Відносні</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Одиниці вимірів в CSS: Відносні - сильно спрощують створення адаптивного дизайну під вимоги різних інтерфейсів, так як у користувачів є різні девайси з різним и розширеннями екранів.
+
+    - % процент вираховується від значень властивостей батьківського елементу. Процент у вимірюванні в розробці використовується часто та регулярно
+    - ex - корисні для роботи лише з моноширійними шрифтами та рідко використовуються у розробці. Відноситься до висоти букви "х" в поточному шрифті
+    - ch - корисні для роботи лише з моноширійними шрифтами та рідко використовуються у розробці. Відноситься до широти  символу "0" в поточному шрифті
+    - fr - fraction - це одиниця, яка представляє частину вільного простору контейнеру. Застосоувується для грідів
+    - em - відносна до розміру шрифта батьківського елементу. Корисний у тому випадку коли всі елементи задані за шкалою цього виміру і для зміни усіх цих розмірів вимірів їх не потрібно міняти за індивідуальним підходом, а можна зміни усі одночасно за допомогою зміни розміру пікселів зазначених у батьківському елементі
+    - rem - root em - відносна розміру шрифта браузера
+    -->
+
+    <!-- !!! Розмір шрифта для браузера за замовчуванням йде 16px -->
+
+    <!-- ! Формула розрахунку процента відносно до розміру шрифта батьківського елементу ! -->
+
+    <div class="second">
+        <p class="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, nobis!</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <div class="img">
+        <img src="./img/1.jpg" alt="Людина та вища сутність">
+    </div>
+    <hr>
+
+    <p class="goorgia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nihil tempora commodi officia, quaerat laborum architecto reprehenderit quia fugit magnam quos dicta quasi perferendis suscipit, expedita ea voluptates libero quod.</p>
+
+    <p class="helvetica">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nihil tempora commodi officia, quaerat laborum architecto reprehenderit quia fugit magnam quos dicta quasi perferendis suscipit, expedita ea voluptates libero quod.</p>
+
+    <p class="courier">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nihil tempora commodi officia, quaerat laborum architecto reprehenderit quia fugit magnam quos dicta quasi perferendis suscipit, expedita ea voluptates libero quod.</p>
+    <hr>
+
+    <div class="content">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h3>Lorem <span>ipsum dolor</span> sit amet.</h3>
+    </div>
+    <hr>
+    <!-- 
+        Формула для переведення px (пікселів) в em:
+    розмір в px ділимо на розмір батьківського елементу в px:
+    12px / 16px = 0.75em 
+    -->
+
+    <!-- 
+        Формула для переведення em в px:
+    розмір в em множимо на розмір батьківського елементу в px:
+    1.75em * 16px = 28px 
+    -->
+
+    <div class="hello">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h4>Lorem <span>ipsum dolor</span> sit amet.</h4>
+    </div>
+    <hr>
+    <div class="toronto">
+        <img src="./img/1.jpg" alt="img">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto reprehenderit incidunt asperiores tempora voluptas rem alias delectus exercitationem ducimus sit deleniti doloribus quod sapiente commodi error, corrupti nisi molestiae obcaecati.</p>
+    </div>
+
+    <p class="font-effect-neon">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto reprehenderit incidunt asperiores tempora voluptas rem alias delectus exercitationem ducimus sit deleniti doloribus quod sapiente commodi error, corrupti nisi molestiae obcaecati.</p>
+
+    <ul>
+        <li>Tea</li>
+        <li>Coffee</li>
+        <li>Coca cola</li>
+    </ul>
+
+
+    <div class="hello-friends">hello-friends</div>
+    <p class="hello">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi et maxime asperiores voluptatibus quibusdam quas deleniti facere? Placeat debitis, reprehenderit quo, vero eaque, sit ipsa et in fugit magni quod quae dolorem quia aliquid suscipit? Ad provident odio repellat placeat quidem nisi, sed praesentium quia sunt nobis dicta repellendus, eaque deleniti corrupti earum, eveniet hic unde eum quas beatae quam. Adipisci deleniti doloribus nesciunt ipsum architecto minus assumenda atque dolores iure, optio nostrum repudiandae perferendis vitae ullam doloremque aperiam laborum et, quia soluta earum asperiores qui nemo quisquam enim. Cumque adipisci, et quam doloremque enim dolores minima laborum! Placeat similique deserunt officia iure eos aperiam ipsum nihil, vel ipsa incidunt. Aperiam doloremque incidunt accusamus labore, dolor quia voluptatum iure minima? Quis, repudiandae atque. Accusantium veritatis minus quod, sed repellendus, eligendi nam cum, dolorem eius ratione culpa dolores voluptatibus. Molestias nemo quaerat fugiat nam praesentium vitae ipsum voluptatibus. Amet fugit earum quam laboriosam cumque aut nesciunt, quo neque perferendis. Eligendi veniam repellat culpa consequatur amet magni vel, provident, ratione numquam rerum dolorem voluptatum! Corporis enim recusandae temporibus nemo, consectetur error nulla dolores ipsam labore at voluptas eaque excepturi exercitationem deleniti eligendi explicabo a consequatur aliquid porro, est odit? Exercitationem, eum quam.</p>
+
+    <div class="seconds"><span class="seconds-2">Hello friends Hello friends Hello friends</span></div>
+</body>
+</html>

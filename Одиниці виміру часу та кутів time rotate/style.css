@@ -1,0 +1,46 @@
+/* Тут додаємо часовий проміжок для появи елементу */
+a {
+    text-decoration: none;
+    transition: 1s;
+}
+
+/* Тут додаємо елемент який буде появлятися у часовий термін зазначений вище */
+a:hover {
+    border-bottom: 2px solid #000;
+}
+
+/* Другий приклад. Застосовуємо - deg */
+.box {
+    width: 400px;
+    height: 200px;
+    background: rgb(0, 0, 0);
+    margin: 200px;
+    transform: rotate(45deg);
+}
+
+/* Третій приклад. Застосовуємо - grad */
+.box-1 {
+    width: 400px;
+    height: 200px;
+    background: blueviolet;
+    margin: 200px;
+    transform: rotate(50grad);
+}
+
+/* Четвертий приклад. Застосовуємо - rad */
+.box-2 {
+    width: 400px;
+    height: 200px;
+    background: rgb(226, 43, 180);
+    margin: 200px;
+    transform: rotate(8rad);
+}
+
+/* Пятий приклад. Застосовуємо - turn */
+.box-3 {
+    width: 400px;
+    height: 200px;
+    background: rgb(43, 226, 52);
+    margin: 200px;
+    transform: rotate(0.7turn);
+}

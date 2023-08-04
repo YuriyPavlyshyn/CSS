@@ -1,0 +1,75 @@
+    .example {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    margin: 20px;
+  
+    border-radius: 10px/30px;
+  
+    /* border-radius: 20px/40px;
+  
+    border-top-left-radius: 50px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 20px; */
+  }
+
+  h1 .first {
+    position: relative;
+    margin-top: 100px;
+  }
+
+  h1::after {
+    content: 'Good night !';
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background: bisque;
+    color: black;
+    top: 40px;
+    left: 173px;
+    border-radius: 200px 100px 200px 0;
+    font-size: 17px;
+    text-align: center;
+    line-height: 50px;
+  }
+  
+  h2.second {
+    position: relative;
+  }
+
+  h2::after {
+    content: 'Good night !';
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background: bisque;
+    color: black;
+    top: -43px;
+    left: 133px;
+    border-radius: 200px 100px 200px 0;
+    font-size: 17px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+    /* list-style-image: url(https://image.flaticon.com/icons/png/128/66/66738.png); */
+  }
+  
+  h1 {
+    /* color: red; */
+    /* color: #ff0000; */
+    /* color: rgb(255, 0, 0); */
+    /* color: hsl(0, 100%, 50%); */
+    color: rgba(255, 0, 0, 0.5);
+  }
+
+  .second {
+    display: inline;
+    color: red;
+    background: linear-gradient(to right, #544a7d, #ffd452);
+    background-position: cover;
+  }

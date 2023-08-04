@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div {
+    min-width: 30%;
+    height: 30%;
+    background: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+ol {
+    color: white;
+    list-style-type: square;
+}
+
+.inside {
+    list-style-position: inside;
+}
+
+.outside {
+    list-style-position: outside;
+}
+
+/* outside - йде за замовчуванням */

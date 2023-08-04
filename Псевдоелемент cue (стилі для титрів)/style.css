@@ -1,0 +1,7 @@
+/* Тут ми застосовуємо стиізацію для субтитрів */
+::cue {
+    color: red;
+    background-color: burlywood;
+    font-size: 30px;
+    font-weight: 800;
+}

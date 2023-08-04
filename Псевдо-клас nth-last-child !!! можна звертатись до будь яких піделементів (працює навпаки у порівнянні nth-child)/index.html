@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Псевдо-клас :nth-last-child</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        !!!! :nth-last-child працює так само як і :nth-child - тільки навпаки, а саме звернення йдуть до останніх числе піделементів !!!! 
+    -->
+    <!-- 
+        :nth-last-child - вибирає останній елемент, який являється "Н-ним" нащадком батьківського елемента 
+    -->
+
+    
+    <!-- Синтаксис:
+        selector:nth-child(число, або ключові слова: "odd", "even", або "вираз"(An+b)) {
+            property: value;
+        }
+    -->
+
+    <!-- 
+        число - позитивне число, починаючи з "1" задає номер елемента, до якого ми хочемо звернутися. Номерація елементів починається з "1". 
+    -->
+
+    <!-- 
+        odd - вибере всі не парні елементи 
+    -->
+
+    <!-- 
+        even - вибере всі парні елементи 
+    -->
+
+    <!-- 
+        вираз - A*n+b 
+    -->
+
+    <!-- 
+        Вираз з буквою "n" - означає всі цілі числа від "0" 
+    -->
+
+    <ol>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+    </ol>
+</body>
+</html>

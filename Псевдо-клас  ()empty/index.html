@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Псевдо-клас :empty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        :empty - це селектор псевдо-класу, який використовується для вибору пустих елементів на сторінці.
+    -->
+
+    <!-- 
+        Тобто він обирає любий елемент, який немає вмісту 
+    -->
+
+    <!-- 
+        Пустий елемент - елемент, який не може мати дочірніх вузлів, тобто елементів, або тексту у себе в середині. Якщо в елементі є пробіл - елемент не вважається пустим.
+    -->
+
+    <!-- <div></div> - це пустий елемент -->
+
+    <!-- <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, blanditiis.</div> - дів з коментарем в середині також являється пустим елементом -->
+
+    <!-- Псевдо-елементи :before :after теж являються пустими -->
+
+    <!-- 
+        Пусті елементи в HTML:
+    - area
+    - base 
+    - hr 
+    - br 
+    - wbr
+    - col 
+    - img 
+    - input 
+    - link
+    - meta 
+    - source 
+    - track 
+    -->
+
+    <ul>
+        <li>Item1</li>
+        <br>
+        <li>Item2</li>
+        <br>
+        <li>Item3</li>
+        <br>
+        <li>Item4</li>
+        <hr>
+        <li></li>
+    </ul>
+</body>
+</html>

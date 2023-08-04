@@ -1,0 +1,17 @@
+/* Тут ми стилізуємо текст плейсхолдера в інпуті */
+/* input::placeholder {
+    color: red;
+    background-color: burlywood;
+} */
+
+/* Тут ми стилізуємо текст плейсхолдера в текстаріа */
+/* textarea::placeholder {
+    color: red;
+    background-color: burlywood;
+} */
+
+/* Можна також звернутися до усіх плейсхолдерів і надати їм одинакової стилізації */
+::placeholder {
+    color: green;
+    background-color: burlywood;
+}

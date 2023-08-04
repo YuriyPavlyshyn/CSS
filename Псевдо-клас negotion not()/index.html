@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Псевдо-клас negation :not()</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        negation :not() - це селектор псевдо-класу заперечення 
+    -->
+
+    <!-- 
+        Синтаксис:
+        selector:not*(negation) {
+        property: value;
+        } 
+    -->
+
+    <!-- 
+        $ - створює 10 елементів з контентом та номерацією від 1 до 10 
+    -->
+
+    <!-- :not(:not(...)) - не парвильний синтаксис -->
+    
+    <ol>
+        <li>item1</li>
+        <li class="item">item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li class="item">item5</li>
+        <li>item6</li>
+        <li class="item">item7</li>
+        <li>item8</li>
+        <li class="item">item9</li>
+        <li>item10</li>
+    </ol>
+</body>
+</html>

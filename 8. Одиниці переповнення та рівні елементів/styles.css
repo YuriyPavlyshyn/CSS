@@ -1,0 +1,43 @@
+li {
+    font-size: 2rem;
+  }
+  
+  .main {
+    font-size: 2px;
+  }
+  
+  html {
+    font-size: 10px;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    position: absolute;
+  
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    bottom: 0;
+    /* width: calc(100px + 200px + 1rem); */
+  
+    z-index: 0;
+  }
+  
+  .modal {
+    border: 2px solid black;
+    width: 200px;
+    height: 100px;
+    background-color: cornflowerblue;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    overflow: auto;
+  }

@@ -1,0 +1,34 @@
+/* Перший приклад */
+
+h1 strong {
+    color: red;
+}
+
+p strong {
+    color: brown;
+}
+
+/* Другий приклад */
+
+.nav li a {
+    color: burlywood;
+}
+
+p a {
+    color: bisque;
+}
+
+/* Третій приклад */
+
+.about .name {
+    color: rgb(15, 241, 15);
+}
+
+.about .phone {
+    color: rgb(178, 241, 84);
+}
+
+.about .adress {
+    color: rgb(55, 139, 5);
+}
+

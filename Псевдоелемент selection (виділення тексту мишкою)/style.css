@@ -1,0 +1,6 @@
+/* Тут ми створюємо стилізацію для псевдоелемента при його виділенні */
+h1::selection {
+    color: yellow;
+    background-color: blue;
+}
+

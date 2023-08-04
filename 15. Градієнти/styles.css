@@ -1,0 +1,28 @@
+body {
+    padding: 0;
+    margin: 0;
+  
+    background-color: transparent;
+  }
+  
+  .wrapper {
+    min-height: 100vh;
+    width: 100%;
+  
+    background-image: linear-gradient(45deg, red 10%, orange 50%, yellow 70%, green, aqua, blue);
+
+    /* background-image: repeating-linear-gradient(45deg, yellow 25px, black 25px, black 50px, yellow 50px, yellow 75px, black 75px); */
+  
+    /* background-image: repeating-radial-gradient(circle, aqua 20px, red 80px); */
+
+    /* background: repeating-linear-gradient(45deg, black 20px, yellow 20px, yellow 40px, black 40px, black 60px, yellow 60px, yellow 80px, black 80px); */
+
+    /* background: linear-gradient(10deg, black 20%, yellow 40%); */
+
+    /* background: rgb(210,4,238);
+    background: radial-gradient(ellipse farthest-corner, rgba(210,4,238,0.665703781512605) 0%, rgba(29,210,213,1) 100%); */
+
+    /* background: repeating-radial-gradient(ellipse, lightblue 20%, pink 80%); */
+  }
+
+  

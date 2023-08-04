@@ -1,0 +1,12 @@
+body {
+    padding: 25px;
+}
+
+input[type=password]:required {
+    border: 2px solid red;
+}
+
+input[type=text]:optional {
+    border: 2px solid gray;
+    opacity: .5;
+}

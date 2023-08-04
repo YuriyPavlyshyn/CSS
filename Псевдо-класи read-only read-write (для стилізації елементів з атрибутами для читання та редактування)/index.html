@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Псевдо-класи :read-only  та :read-write</title>
+    <link rel="stylesheet" href="style.css ">
+</head>
+<body>
+    <!-- 
+        :read-only - селектор псевдо-класу, який відповідає елементам не доступним для редактування користувачем. Буде примінятись якщо наявні - disabled, read-only, або відсутній - content "editable"
+    -->
+    
+    <!-- 
+        :read-write - селектор псевдо-класу, який відповідає елементам доступним для редактування користувачем. Тут навпаки буде примінятись якщо наявний content "editable" та відсутні - disabled, read-only
+    -->
+
+    <!-- Ці песвдо-класи створені для спрощення стилізації форм на основі атрибутів: disabled, read-only, content "editable" -->
+
+    <input type="text" name="example" id="example" class="example" value="Звичайне текстове поле">
+    <br>
+    <br>
+    <hr>
+    <input type="text" name="example" id="example" class="example" value="Текстове поле з атрибутом disabled" disabled>
+    <br>
+    <br>
+    <hr>
+    <input type="text" name="" id="" class="example" value="Текстове поле з атрибутом readonly" readonly>
+    <br>
+    <br>
+    <hr>
+    <p class="example" contenteditable="">Параграф з атрибутом - contenteditable</p>
+    <hr>
+    <p class="example">Звичайний параграф</p>
+    <hr>
+</body>
+</html>

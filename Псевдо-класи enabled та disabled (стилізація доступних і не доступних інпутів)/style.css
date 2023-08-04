@@ -1,0 +1,15 @@
+/* Стилізуємо доступний елемент */
+input[type=text]:enabled:focus {
+    color: green;
+    background: #000;
+}
+
+/* Дуже класна річ: курсор мишки перетворюється на знак "заборонено" при наведенні на виключений обєкт */
+input[type=text]:disabled {
+    cursor: not-allowed;
+}
+
+input[type=checkbox]:disabled + label {
+    text-decoration: line-through;
+    cursor: not-allowed;
+}

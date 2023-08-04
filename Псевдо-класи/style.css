@@ -1,0 +1,5 @@
+/* Тут ми стилізуємо лінку під час ховеру на нього мишкою */
+a:hover {
+    color: red;
+    background-color: black;
+}

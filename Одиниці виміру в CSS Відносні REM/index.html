@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Одиниці виміру в CSS Відносні REM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        rem - одиниця виміру яка представляє розмір шрифту корневого елементу. Це означає що 1 rem дорівнює розміру кореневого елементу HTML, який по стандарту має 16px. не важливо який по структурі буде дочірній елемент - в будь - якому випадку все буде розраховуватися від значення головного батьківського елементу.
+
+        Формула розрахунків:
+
+        10px = 10/16=0.625rem
+        12px = 12/16=0.75rem
+        14px = 14/16=0.875rem
+        16px = 16/16=1rem
+        18px = 18/16=1.125rem
+        20px = 20/16=1.25rem
+        24px = 24/16=1.5rem
+        30px = 30/16=1.875rem
+        32px = 32/16=2rem
+    -->
+
+    <ul>
+        <li>item
+            <ul>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+        </li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+    <hr>
+    
+</body>
+</html>

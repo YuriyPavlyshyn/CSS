@@ -1,0 +1,90 @@
+body {
+    padding: 10px 30px;
+    margin: 0;
+    background-color: lightgrey;
+    font-size: 24px;
+    font-family: monospace;
+  }
+  
+  input {
+    font-size: 24px;
+    padding: 5px 10px;
+  
+    color: red;
+  }
+  
+  /* плейсхолдер можна можна повно масштабно та різнобічно стилізувати та навіть задавати різзні шрифти */
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: blue;
+    font-family: Algerian;
+    font-size: 20px;
+    opacity: 1; /* Firefox */
+  }
+  
+  /* робимо плейсхолдер прозорим при фокусі */
+  input:focus::-webkit-input-placeholder { 
+    color: transparent;}
+
+  /* плавний пеерхід до прозорості */
+  input::-webkit-input-placeholder { 
+    -webkit-transition:.5s;
+  }
+
+  /* прописуємо ідентичні властивості із значеннями для Едж браузера */
+  ::-ms-input-placeholder {
+    /* Edge */
+    color: blue;
+  }
+  
+  /* прописуємо ідентичні властивості із значеннями для Інтернет Експловрера */
+  :-ms-input-placeholder {
+    /* IE 10-11 */
+    color: blue;
+  }
+
+  /* тут ми задаємо ширину скролу та його бекграунд */
+  ::-webkit-scrollbar {
+    width: 15px;
+    background: #291f26;
+    height: 100%;
+  }
+  
+  /* внутрішня частина скролу */
+  ::-webkit-scrollbar-track {
+    border: 1px solid grey;
+    box-shadow: inset 0 0 2.5px 2px rgba(54, 53, 53, 0.5);
+  }
+  
+  /* сам елемент для реалізації скролу */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, grey, #222);
+    border: 2px solid rgb(100, 81, 81);
+    border-radius: 5px;
+    height: 315px;
+    /* height: 56px;
+     border-radius: 8px;
+     border: 4px solid #FFFFFF;
+     background-clip: content-box;
+     background-color: transparent; */
+  }
+
+  button {
+    width: 200px;
+    height: 79px;
+    background-image: url(./img/23.png);
+    background-position: top;
+    background-size: cover;
+    text-indent: -9999px; /* фактично забираємо фізичний контент кнопки */
+    border: none;
+    background-color: transparent;
+    outline: grey;
+  }
+  
+  button:hover {
+    background-position: center;
+  }
+  
+  button:active {
+    background-position: bottom;
+  }

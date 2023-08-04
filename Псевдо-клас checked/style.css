@@ -1,0 +1,21 @@
+body {
+    padding: 15px;
+}
+
+/* Тут ми застосовуємо стилі для конкретного типу інпуту при натисканні на нього (радіо кнопка)*/
+input[type="radio"]:checked {
+    width: 50px;
+    height: 50px;
+}
+
+/* Тут ми застосовуємо стилі для конкретного лейблу, який знаходиться в інпуті при натисканні на інпут  */
+input[type="radio"]:checked + label {
+    color: tomato;
+    font-size: 50px;
+}
+
+/* Другий приклад застосування :checked (чекбокс). Працює як із додаванням класу до лейблу так і без нього */
+input[type="checkbox"]:checked + label.C1 {
+    color: rgb(255, 71, 224);
+    text-decoration: line-through;
+}

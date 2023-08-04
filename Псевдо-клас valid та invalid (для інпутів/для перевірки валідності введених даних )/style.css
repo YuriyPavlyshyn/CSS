@@ -1,0 +1,26 @@
+/* Перевірка валідності введених даних в інпуті імейл (нижче описано два значення, які працюватимуть відповідно до валідності введених даних) */
+input[type=email]:invalid {
+    background-color: red;
+}
+
+input[type=email]:valid {
+    background-color: green;
+}
+
+/* Перевірка валідності введених даних в інпуті "url" (нижче описано два значення, які працюватимуть відповідно до валідності введених даних) */
+input[type=url]:invalid {
+    background-color: red;
+}
+
+input[type=url]:valid {
+    background-color: green;
+}
+
+/* Перевірка валідності введених даних в інпуті із значеннями в "pattern (нижче описано два значення, які працюватимуть відповідно до валідності введених даних) */
+input[type=number]:invalid {
+    background-color: red;
+}
+
+input[type=number]:valid {
+    background-color: green;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 способи підключення таблиць CSS до HTML документу</title>
+    <!-- 4. Комбінований (combined) CSS -->
+    <style>
+        @import url(style.css);
+    </style>
+    <!-- 3. Зовнішній (external) CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 2. Вкладений (embedded) CSS -->
+    <style>
+        .h2 {color: black; text-align: center;}
+        .p2 {color: blueviolet; text-align: center;}
+    </style>
+</head>
+<body>
+
+    <!-- !!! Примітка вбудований стиль має найвищий пріоритет у порівнянні з усіма іншими ! Тобто якщо ми вбудуємо стиль у елемент - він перебудує всі інші стилі які стосуються цього елемента ! -->
+    
+    <!-- 1. Вбудований (inline) CSS -->
+    <h1 style="color: red; text-align: center;">Header</h1>
+    <p style="color: brown; text-align: center;">Paragraph</p>
+    <hr>
+
+    <!-- 2. Вкладений (embedded) CSS -->
+    <h1 class="h2">Header</h1>
+    <p class="p2">Paragraph</p>
+    <hr>
+
+    <!-- 3. Зовнішній (external) CSS -->
+    <h1 class="h3">Header</h1>
+    <p class="p3">Paragraph</p>
+    <hr>
+
+    <!-- 4. Комбінований (combined) CSS -->
+    <h1 class="h4">Header</h1>
+    <p class="p4">Paragraph</p>
+    <hr>
+
+
+    <!-- !!! Примітка: завжди буде працювати той стиль який знаходиться найнижче, тому CSS і називається каскадними таблицями стилів - типу за спадаючим варіантом -->
+</body>
+</html>

@@ -1,0 +1,8 @@
+a:link {
+    color: aqua;
+}
+
+/* Тут ми стилізуємо лише відвідане посилання */
+a:visited {
+    color: burlywood;
+}

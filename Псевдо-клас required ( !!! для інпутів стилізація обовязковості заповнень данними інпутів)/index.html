@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Псевдо-клас :required</title>
+    <link rel="stylesheet" href="style.css ">
+</head>
+<body>
+    <!-- 
+        :required - селектор спевдокласу для вибору необхідних елементів форми. required також являється атрибутом.
+    -->
+
+    <!-- Використовується в інпутах та текстареа -->
+
+    <!-- 
+        required - з англійської мови означає як обовязково 
+    -->
+
+    <!-- <input type="text" required>
+
+    <input type="password" name="" id="" required>
+
+    <textarea name="" id="" cols="30" rows="10" required></textarea> -->
+
+        <form action="#">
+            <label for="name">Name</label>
+            <br>
+            <input type="text" id="name" required>
+            <br>
+            <br>
+            <label for="pass">Password</label>
+            <br>
+            <input type="password" id="pass" required>
+            <br>
+            <br>
+            <textarea name="" id="" cols="30" rows="10" required></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- При додаванні атрибуту "required" та при не заповненні того чи іншого поля куди його було додано - і спробі відправити на сервер пусті дані: будуть появлятися повідомлення про необхідність заповнення того чи іншого поля. Якщо атрибут застосований до декількох полей і ми відправляємо пусті дані на сервер повідомлення про обовязковість заповнення даних будуть зявлятись у першому полі, друге буде ігноруватися. Якщо перше поле заповнене а друге ні, тоді повідомлення зявлятиметься лише у другому полі. -->
+
+</body>
+</html>

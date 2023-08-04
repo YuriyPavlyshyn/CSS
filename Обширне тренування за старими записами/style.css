@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.first {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+}
+
+p {
+    border: 5px solid;
+    border-image: linear-gradient(45deg,rgb(189, 195, 199), rgb(189, 195, 199)) 1;
+    background: lightblue;
+    /* border: 5px solid;
+    border-image: linear-gradient(45deg, purple, orange) 1;
+    padding: 15px;
+    background: #222;
+    color: wheat; */
+}
+
+h3 {
+    word-break: break-all; /* не працює чомусь */
+}
+
+.second {
+  width: 5px;
+  font-size: 20px;
+  word-wrap: break-word; /* розбиваємо слово по буквам вертикально */
+  margin: 0 auto;
+}
+
+.module-border-wrap {
+    max-width: 250px;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, red, purple);
+    padding: 3px;
+  }
+  
+  .module {
+    background: #222;
+    color: white;
+    padding: 2rem;
+  }
+
+.text {
+    min-width: 30%;
+    min-height: 10vh;
+    padding: 15px;
+}
+
+.text p {
+    background: linear-gradient(to right, red, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 15px;
+   
+}
+
+.text:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.img img {
+    object-fit: cover;
+    object-position: center;
+    /* filter: brightness(80%); */
+    /* filter: grayscale(90%); */
+    /* filter: contrast(30%); */
+    filter: sepia(90%);
+}
+
+.youtube {
+    filter: /* invert(40%) */ /* grayscale(90%) */ brightness(350%);
+}
+
+.map {
+    filter: /* brightness(350%) */ /* contrast(20%) */ /* grayscale(100%) */ invert(100%);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: #222;
+    display: flex;
+    padding: 2%;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.hello {
+    width: 20%;
+    min-height: 100%;
+    padding: 2%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    flex: 1;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.hello-1 {
+    background: red;
+}
+
+.hello-2 {
+    background: green;
+    flex: 2;
+}
+
+.img-main {
+    width: 100%;
+    height: 50%;
+}
+
+.hello-3 {
+    background: blue;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.aside {
+    overflow: hidden;
+}
+
+.wrapper-main {
+    width: 100%;
+    height: 30vh;
+}
+
+.main-div {
+    width: 100%;
+    height: 100%;
+    background: #570450;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    flex-direction: row;
+    gap: 8% 1%;
+    border: 1px solid blue;
+}
+
+.exit {
+    padding: 1%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    flex: 1 1 18%;
+    background: brown;
+    border: 1px solid gray;
+    /* margin: 1%; */
+}
+
+.wrapper-main2 {
+    width: 100%;
+    height: 30vh;
+}
+
+.main-div2 {
+    width: 100%;
+    height: 100%;
+    background: #570450;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    flex-direction: row;
+    /* gap: 1%; */
+    border: 1px solid blue;
+}
+
+.exit2 {
+    padding: 1%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    flex: 1 1 18%;
+    background: brown;
+    border: 1px solid gray;
+    margin: 1%;
+}
+
+.wrapper-main3 {
+    width: 100%;
+    height: 150vh;
+}
+
+.main-div3 {
+    width: 100%;
+    height: 100%;
+    background: #570450;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    border: 1px solid blue;
+    padding: 1%;
+    
+}
+
+.exit3 {
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 180px;
+    background: brown;
+    border: 1px solid gray;
+}
+
+.wrapper-main4 {
+    width: 100%;
+    height:200vh;
+}
+
+.main-div4 {
+    width: 100%;
+    height: 100%;
+    background: #570450;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    align-items: center;
+    border: 1px solid blue;
+    padding: 1%;
+    
+}
+
+.exit4 {
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 180px;
+    background: brown;
+    border: 1px solid gray;
+    margin: 2%;
+}
+
+.wrapper-main5 {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-div5 {
+    width: 100%;
+    height: 100%;
+    background: #570450;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    align-items: center;
+    border: 1px solid blue;
+    padding: 1%;
+    
+}
+
+.exit5 {
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 180px;
+    background: brown;
+    border: 1px solid gray;
+}
+
+.wrapper-main6 {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-div6 {
+    width: 100%;
+    height: 100%;
+    background: #570450;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    padding: 1%;
+    
+}
+
+.exit6 {
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 180px;
+    background: brown;
+    border: 1px solid gray;
+}
+
+.wrapper-main7 {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-div7 {
+    width: 100%;
+    height: 100%;
+    background: #570450;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    padding: 1%;
+}
+
+.exit7 {
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 180px;
+    background: brown;
+    border: 1px solid gray;
+}
+
+.wrapper-main8 {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-div8 {
+    width: 100%;
+    height: 100%;
+    background: #570450;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    padding: 1%;
+}
+
+.exit8 {
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    line-height: 180px;
+    background: brown;
+    border: 1px solid gray;
+}
+
+.div-5 {
+    order: -1;
+}
+
+.div-3 {
+    order: 1;
+}
+
+.div-2 {
+    order: 2;
+}
+

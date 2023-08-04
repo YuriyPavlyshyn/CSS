@@ -1,0 +1,20 @@
+form {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* Цікава річ, однак не зрозуміло чому спрацьовує батьківський елемент тоді коли ми фактично фокус застосовуємо на елементах нащадках */
+form:focus-within {
+    background-color: aqua;
+}
+
+/* Тут підсвічується label який знаходиться навпроти відповідного інпута */
+label:focus-within {
+    color: red;
+}
+
+/* Тут ми підсвічуємо безпосередньо інпут */
+input:focus-within {
+    background-color: cadetblue;
+    color: burlywood;
+}

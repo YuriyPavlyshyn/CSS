@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Селектори атрибутів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- "Атрибут" - вибере елементи з вказаним атрибутом -->
+    <a href="#" class="link">link</a>
+    <hr>
+
+    <!-- "Атрибут - значення" - вибере значення у яких атрибут точно відповідає значенню -->
+    <a href="#!">link</a>
+    <hr>
+
+    <!-- "Атрибут - значення" - вибере значення у яких атрибут точно відповідає значенню. Приклад № 2 -->
+    <form action="#">
+        <input type="text">
+        <br>
+        <br>
+        <input type="password">
+    </form>
+    <hr>
+
+    <!-- Атрибут^ - значення: вибере елементи у яких значення атрибута починається з вказаного значення -->
+    <a href="page.html">link</a>
+    <hr>
+
+    <!-- Атрибут$=значення: вибере елементи у яких значення атрибута закінчується на вказане значення -->
+    <a href="page.css">link</a>
+    <hr>
+
+    <!-- Атрибут* - "значення" - вибере елементи у яких атрибут містит вказані значення -->
+    <a href="word.js">link</a>
+    <a href="word1.js">link</a>
+    <a href="word2.js">link</a>
+    <hr>
+
+    <!-- Атрибут* - "значення" - вибере елементи у яких атрибут містит вказані значення (несе у собі актуальність для прикладів наведених нижче)-->
+    <img src="./img/image.jpg" style="width: 300px; height: 200px;">
+    <img src="./img/image1-woman.png" style="width: 300px; height: 200px;">
+    <img src="./img/image2-woman.jpeg" style="width: 300px; height: 200px;">
+    <hr>
+
+    <!-- Атрибут~="слово": вибере елементи у яких атрибут містить вказане слово повністю (використовуються коли значення атрибуту використовуються слова розділені пробілами) -->
+    <a href="hello.js" class="element1 element2 element3">Hello</a>
+    <hr>
+
+    <!-- Атрибут| = "значення": вибере елементи в яких атрибут точно рівний значенню, або починається з вказаного значення після якого йде дефіс -->
+    <a href="hello.js" class="hello">hello</a>
+    <a href="#" class="hello-post">hello2</a>
+
+</body>
+</html>
